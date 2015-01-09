@@ -43,7 +43,7 @@ class MostLikedPosts_Widget extends WP_Widget
             <?php if (!empty($instance['title'])): ?>
                 <h3 class="widget-title"><?php echo $instance['title'] ?></h3>
             <?php else: ?>
-                <h3 class="widget-title"><?php _e('Najpopularniejsze wpisy', 'MostLikedPosts') ?></h3>
+                <h3 class="widget-title"><?php _e('Most popular posts', 'MostLikedPosts') ?></h3>
             <?php endif ?>
             <ul>
                 <?php foreach ($posts as $post): ?>
@@ -99,5 +99,12 @@ class MostLikedPosts_Widget extends WP_Widget
         return $instance;
     }
 }
+
+function register_most_liked_posts_widget()
+{
+    register_widget('MostLikedPosts_Widget');
+}
+
+add_action('widgets_init', 'register_most_liked_posts_widget');
 
 ?>
