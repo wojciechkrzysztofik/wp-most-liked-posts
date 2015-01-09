@@ -3,6 +3,7 @@ Contributors: wkrzysztofik
 Tags: facebook,popular,like,widget
 Requires at least: 3.0
 Tested up to: 4.1
+Stable tag: 1.0
 License: GPLv3 or later
 
 Wordpress widget displaying list of posts ordered by number of Facebook likes.
